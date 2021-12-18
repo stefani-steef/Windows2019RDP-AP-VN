@@ -12,7 +12,7 @@ jobs:
     - name: Tải Ngrok & NSSM
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/TheDarkMythos/Ngrok-Exe/master/ngrok.exe -OutFile ngrok.exe
-        Invoke-WebRequest https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/Windows2019RDP-US-MMDYT/main/Files/nssm.exe -OutFile nssm.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/Windows2019RDP-AP-VN/main/Files/nssm.exe -OutFile nssm.exe
     - name: Chép NSSM & Ngrok Vào thư mục Windows.
       run: | 
         copy nssm.exe C:\Windows\System32
@@ -23,9 +23,9 @@ jobs:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
     - name: Tải những files quan trọng.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/Windows2019RDP-US-MMDYT/main/Files/NGROK-AP.bat -OutFile NGROK-AP.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/Windows2019RDP-US-MMDYT/main/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/Windows2019RDP-US-MMDYT/main/Files/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/Windows2019RDP-AP-VN/main/Files/NGROK-AP.bat -OutFile NGROK-AP.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/Windows2019RDP-AP-VN/main/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/Windows2019RDP-AP-VN/main/Files/loop.bat -OutFile loop.bat
     - name: Làm những files YML cho Ngrok.
       run: start NGROK-AP.bat
     - name: Bật quyền truy cập vào RDP.
