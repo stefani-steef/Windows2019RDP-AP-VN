@@ -12,4 +12,8 @@ Lưu ý là đừng đổi tên repo
 - Sau khi đổi tên xong, bạn bấm Start commit và bấm Commit changes
 - Chuyển qua Action > BUSCU > Run workflow
 - Reload lại trang và ấn BUSCU > build 
-- Ấn mũi tên xuống ở Kết nối đến RDP của bạn để lấy IP, Tên, Mật khẩu. 
+- Ấn mũi tên xuống ở Kết nối đến RDP của bạn để lấy IP, Tên, Mật khẩu.
+   Lưu ý: Khi lấy IP, đừng lấy chữ tcp://
+   VD: tcp://0.tcp.ap.ngrok.io:10952 thì bỏ chữ tcp:// thì sẽ thành 0.tcp.ap.ngrok.io:10952
+- Sau đó bạn mở Remote Desktop Connection và nhập các thông tin đó vào
+
