@@ -8,7 +8,7 @@ Lưu ý là đừng đổi tên repo
  + Phần Value: truy cập https://dashboard.ngrok.com/auth/your-authtoken Copy và Paste Your Authtoken vào
 - Ấn Add secret
 - Quay về vào Code và vào .github/workflows/RDP-AP.yml rồi bấm cây bút bên trên gốc trái kế bên hình thùng rác
-- Sau đó bạn Ctrl + F và ghi YOUR_GITHUB_USERNAME vào, những chỗ có tên như thế thì bạn thay thế thành tên github của bạn
+- Sau đó bạn Ctrl + F và ghi YOUR_GITHUB_USERNAME vào, những chỗ có tên như thế thì bạn thay thế thành tên github của bạn. Làm tương tự như thế với file NGROK-CHECK.bat ở Files/NGROK-CHECK.bat
 - Sau khi đổi tên xong, bạn bấm Start commit và bấm Commit changes
 - Chuyển qua Action > BUSCU > Run workflow
 - Reload lại trang và ấn BUSCU > build 
