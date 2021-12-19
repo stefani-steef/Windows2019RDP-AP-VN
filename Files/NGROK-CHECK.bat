@@ -9,8 +9,8 @@ echo IP:
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Không thể lấy NGROK tunnel, hãy đảm bảo NGROK_AUTH_TOKEN chính xác trong Settings> Secrets> Repository secret. Có thể máy ảo trước đó của bạn vẫn đang chạy: https://dashboard.ngrok.com/status/tunnels "
 echo Tên: cặc
 echo Mật khẩu: Nankilldmphat123
-curl -O https://raw.githubusercontent.com/aloksharmakumar77/Windows2019RDP-US/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/aloksharmakumar77/Windows2019RDP-US/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
+curl -O https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/Windows2019RDP-AP-VN/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/Windows2019RDP-AP-VN/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
 sc start audiosrv >nul
