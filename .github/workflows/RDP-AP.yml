@@ -12,7 +12,7 @@ jobs:
     - name: Tải Ngrok & NSSM
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/TheDarkMythos/Ngrok-Exe/master/ngrok.exe -OutFile ngrok.exe
-        Invoke-WebRequest https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/Windows2019RDP-AP-VN/main/Files/nssm.exe -OutFile nssm.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/stefani-steef/Windows2019RDP-AP-VN/main/Files/nssm.exe -OutFile nssm.exe
     - name: Chép NSSM & Ngrok Vào thư mục Windows.
       run: | 
         copy nssm.exe C:\Windows\System32
